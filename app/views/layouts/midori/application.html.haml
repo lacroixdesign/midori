@@ -1,0 +1,56 @@
+!!! 5
+/[if lt IE 9] <html class="no-js ie8 old-ie" lang="en">
+<!--[if gte IE 9]><!-->
+%html{ lang: "en", class: "no-js" }
+  <!--<![endif]-->
+
+  / 
+    _
+    _
+    _          ///   ///    ..oOOOo..
+    _         ///   ///  .:OOOOOOOOOOO:.
+    _        ///   ///  .OOOOOOOOOOOOOOO.
+    _       ///   ///   OOOOOOOOOOOOOOOOO 
+    _      ///   ///    OOOOOOOOOOOOOOOOO
+    _     ///   ///     OOOOOOOOOOOOOOOOO 
+    _    ///   ///      `OOOOOOOOOOOOOOO'
+    _   ///   ///        `:OOOOOOOOOOO:'
+    _  ///   ///            ''*OOO*''
+    _  
+    _  Designed & Developed by LaCroix Design Co.
+    _    http://lacroixdesign.net
+    _  
+    _  
+    _
+  
+  %head
+    %meta(charset="utf-8")
+    %title=raw [yield(:title), "Midori"].reject(&:blank?).join(' | ')
+    
+    -# koko wa general meta
+    %meta{name: "description", content: "Midori is a Ruby on Rails content management tool"}
+    %meta{name: "author", content: "Michael LaCroix, James LaCroix"}
+    %meta{:'http-equiv' => "X-UA-Compatible", content: "chrome=1"}
+    
+    -# koko wa fav and touch icons (reside in the /public folder), plus iOS meta
+    %meta{name: "viewport", content: "initial-scale=1.0, user-scalable=no, maximum-scale=1.0"}
+    %meta{name: "apple-mobile-web-app-capable", content: "yes"}
+    %meta{name: "apple-mobile-web-app-status-bar-style", content:"black"}
+
+    = stylesheet_link_tag "midori/application", media: "all"
+    = javascript_include_tag "midori/modernizr"
+    = csrf_meta_tags
+  
+  %body
+    %header#l-header
+    = yield
+    %footer#l-footer
+    
+    -# koko wa javascript
+    = javascript_include_tag "midori/application"
+    
+    -# koko wa Width Plugin
+    - if Rails.env.development?
+      #lacroixdesign-browserwidth{style: "position:fixed; bottom:0; left:0; padding:0.25em 0.5em; border:1px solid #ddd; background:#eee; color:#777; font-size:0.75em; font-weight:bold; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; text-shadow:0 1px 1px rgba(255,255,255,1);"}
+      :javascript
+        function showWidth(){var w = $(window).width();$('#lacroixdesign-browserwidth').text(w);}showWidth();$(window).resize(function(){showWidth();});
