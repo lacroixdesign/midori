@@ -1,18 +1,16 @@
-// General Containers
-
 .l-constrained {
   @include outer-container;
-  padding: 0 $page-gutter;
+  margin: 0;
 }
 
 .l-main {
-  @include media($breakpoint-ipad) {
+  @include media-ie($breakpoint-gamma) {
     @include span-columns(8);
   }
 }
 
 .l-sidebar {
-  @include media($breakpoint-ipad) {
+  @include media-ie($breakpoint-gamma) {
     @include span-columns(4);
   }
 }

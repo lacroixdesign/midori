@@ -1,6 +1,8 @@
 // Basic Elements
 body {
-  background: white;
+  @include clearfix;
+  background: $white;
+  color: #666;
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
 }
@@ -11,6 +13,10 @@ a {
 
 p, a, h1, h2, h3, h4, h5, label {
   font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
 }
 
 h1 {}
@@ -25,4 +31,7 @@ h5 {}
 
 h6 {}
 
-p {}
+p {
+  font-size: 1.125em;
+  line-height: 1.35;
+}

@@ -1,0 +1,31 @@
+.l-menu {
+  position: absolute;
+  width: $menu-width-alpha;
+  min-height: 100%;
+  margin-left: -100%;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background: $menu-color;
+  @include transition(margin-left 0.3s ease-in-out, width 0.3s ease-in-out);
+
+  &.is-open {
+    margin-left: 0;
+    box-shadow: 1px 0 15px rgba(0,0,0,0.5);
+  }
+
+  @include media($breakpoint-beta) {
+    position: absolute;
+    width: $menu-width-beta;
+    margin-left: 0;
+    box-shadow: inset -1px 0 1px rgba(0,0,0,0.4) !important;
+    border-radius: 0;
+    text-align: center;
+    @include transition(all 0s ease-in-out);
+  }
+
+  @include media-ie($breakpoint-gamma) {
+    width: $menu-width-gamma;
+    text-align: left;
+  }
+
+}

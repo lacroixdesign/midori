@@ -1,0 +1,136 @@
+// Menu Header
+.m-menu-header {
+  @include clearfix;
+  padding: 1em $menu-gutter;
+  color: lighten($menu-color, 35%);
+
+  .header-logo {
+    float: left;
+    width: 1.75em;
+    margin-right: 1em;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+    float: left;
+    font-size: 1.25em;
+    text-transform: uppercase;
+  }
+
+  .menu-close-btn {
+    float: right;
+    font-size: 1.75em;
+    line-height: 1;
+  }
+
+  @include media-ie($breakpoint-beta) {
+    font-size: 85%;
+
+    .header-logo {
+      float: none;
+      width: 2.5em;
+      margin: auto;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    .menu-close-btn {
+      display: none;
+    }
+  }
+
+  @include media-ie($breakpoint-gamma) {
+    font-size: 100%;
+
+    .header-logo {
+      float: left;
+      margin-right: 1em;
+    }
+
+    h1 {
+      display: block;
+      font-size: 2em;
+    }
+  }
+
+}
+
+// Menu List
+.m-menu-list {
+  margin-bottom: 1em;
+  border-top: 1px solid darken($menu-color, 3%);
+  color: lighten($menu-color, 35%);
+
+  .menu-list-title {
+    padding: 1em $menu-gutter;
+  }
+
+  h2 {
+    font-size: 0.6875em;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    padding: 0 $menu-gutter;
+    margin: 0;
+    &:hover { background: darken($menu-color, 3%); }
+  }
+
+  li a {
+    @include clearfix;
+    display: block;
+    padding: 0.25em 0;
+    font-size: 1.125em;
+
+    i {
+      float: left;
+      width: 1.5em;
+      font-size: 1.5em;
+    }
+
+    span {
+      float: left;
+      margin-top: 0.25em;
+    }
+  }
+
+  @include media($breakpoint-beta) {
+    font-size: 90%;
+
+    li a {
+      i {
+        float: none;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  @include media-ie($breakpoint-gamma) {
+    font-size: 100%;
+
+    li a {
+      i {
+        float: left;
+      }
+
+      span {
+        display: inline;
+      }
+    }
+  }
+
+}

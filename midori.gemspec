@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency "jquery-rails"
   s.add_dependency "boarding_pass"
   s.add_dependency "haml-rails"
+  s.add_dependency "coffee-rails"
   
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"

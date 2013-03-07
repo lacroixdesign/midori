@@ -1,0 +1,17 @@
+.l-body {
+  width: 100%;
+
+  @include media($breakpoint-beta) {
+    float: none;
+    padding-left: $menu-width-beta;
+
+    .menu-close-btn { display: none; }
+  }
+
+  @include media-ie($breakpoint-gamma) {
+    padding-left: $menu-width-gamma;
+
+    .menu-close-btn { display: none; }
+  }
+
+}

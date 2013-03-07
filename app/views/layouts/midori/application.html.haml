@@ -42,9 +42,47 @@
     = csrf_meta_tags
   
   %body
-    %header#l-header
-    = yield
-    %footer#l-footer
+
+    -# Menu
+    %section.l-menu#menu
+      .m-menu-header
+        .header-logo
+          = image_tag "midori/logo.png"
+        %h1 Midori
+        .menu-close-btn
+          %a{ href: "#menu", data: {toggle_class: "is-open"} }
+            = icon("f0c9")
+
+      .m-menu-list
+        .menu-list-title
+          %h2 Manage
+        %ul
+          = render "midori/menu/menu_item", title: "Pages", url: "#", icon: icon("e001")
+          = render "midori/menu/menu_item", title: "Posts", url: "#", icon: icon("e000")
+          = render "midori/menu/menu_item", title: "Events", url: "#", icon: icon("e006")
+          = render "midori/menu/menu_item", title: "Images", url: "#", icon: icon("e002")
+          = render "midori/menu/menu_item", title: "Galleries", url: "#", icon: icon("e003")
+
+      .m-menu-list
+        .menu-list-title
+          %h2 Admin
+        %ul
+          = render "midori/menu/menu_item", title: "Settings", url: "#", icon: icon("e00b")
+          = render "midori/menu/menu_item", title: "Help", url: "#", icon: icon("e015")
+          = render "midori/menu/menu_item", title: "Sign Out", url: "#", icon: icon("e00e")
+
+    -# Body
+    %section.l-body
+      .m-body-header
+        .l-constrained
+          .menu-close-btn
+            %a{ href: "#menu", data: {toggle_class: "is-open"} }
+              = icon("f0c9")
+          %h1= yield(:title)
+
+      .m-body-content
+        .l-constrained
+          = yield
     
     -# koko wa javascript
     = javascript_include_tag "midori/application"
