@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount Midori::Engine => "/midori"
+  mount Midori::Engine => "/admin"
 end
