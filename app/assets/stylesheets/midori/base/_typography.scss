@@ -1,3 +1,31 @@
 // Typefaces
-$typeface-sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@include font-face( "OpenSans",
+  "midori/open-sans/OpenSans-Light-webfont", 
+  lighter, normal, $asset-pipeline: true
+);
+@include font-face( "OpenSans", 
+  "midori/open-sans/OpenSans-LightItalic-webfont", 
+  lighter, italic, $asset-pipeline: true
+);
+
+@include font-face( "OpenSans", 
+  "midori/open-sans/OpenSans-Regular-webfont", 
+  normal, normal, $asset-pipeline: true
+);
+@include font-face( "OpenSans", 
+  "midori/open-sans/OpenSans-Italic-webfont", 
+  normal, italic, $asset-pipeline: true
+);
+
+@include font-face( "OpenSans", 
+  "midori/open-sans/OpenSans-Bold-webfont", 
+  bold, normal, $asset-pipeline: true
+);
+@include font-face( "OpenSans", 
+  "midori/open-sans/OpenSans-BoldItalic-webfont", 
+  bold, italic, $asset-pipeline: true
+);
+
+$typeface-sans:  "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $typeface-serif: Georgia, Cambria, "Times New Roman", Times, serif;

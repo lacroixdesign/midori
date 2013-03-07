@@ -1,1 +1,1 @@
-//= require modernizr
+//= require midori/modernizr
