@@ -2,29 +2,29 @@
 
 @include font-face( "OpenSans",
   "midori/open-sans/OpenSans-Light-webfont", 
-  lighter, normal, $asset-pipeline: true
+  200, normal, $asset-pipeline: true
 );
 @include font-face( "OpenSans", 
   "midori/open-sans/OpenSans-LightItalic-webfont", 
-  lighter, italic, $asset-pipeline: true
+  200, italic, $asset-pipeline: true
 );
 
 @include font-face( "OpenSans", 
   "midori/open-sans/OpenSans-Regular-webfont", 
-  normal, normal, $asset-pipeline: true
+  400, normal, $asset-pipeline: true
 );
 @include font-face( "OpenSans", 
   "midori/open-sans/OpenSans-Italic-webfont", 
-  normal, italic, $asset-pipeline: true
+  400, italic, $asset-pipeline: true
 );
 
 @include font-face( "OpenSans", 
   "midori/open-sans/OpenSans-Bold-webfont", 
-  bold, normal, $asset-pipeline: true
+  600, normal, $asset-pipeline: true
 );
 @include font-face( "OpenSans", 
   "midori/open-sans/OpenSans-BoldItalic-webfont", 
-  bold, italic, $asset-pipeline: true
+  600, italic, $asset-pipeline: true
 );
 
 $typeface-sans:  "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
