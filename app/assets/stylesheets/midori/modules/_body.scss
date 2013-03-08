@@ -16,6 +16,7 @@
 
   h1 {
     overflow: hidden;
+    margin-right: 0.65em;
     font-family: $typeface-title;
     font-size: 2.5em;
     line-height: 1;
@@ -25,6 +26,10 @@
 
   @include media-ie($breakpoint-beta) {
     text-align: left;
+
+    h1 {
+      margin-right: 0;
+    }
   }
 }
 
