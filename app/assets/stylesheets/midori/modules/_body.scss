@@ -1,21 +1,26 @@
 // Body Header
 .m-body-header {
   @include clearfix;
-  padding: 0.5em $page-gutter;
+  padding: 0.6em $page-gutter 0.5em;
   margin-bottom: 1em;
+  border-bottom: 3px solid darken($turquoise, 5%);
   background: $turquoise;
-  color: $silver;
+  color: darken($turquoise, 12%);
   text-align: center;
 
   .menu-close-btn {
     float: left;
     font-size: 2em;
-    line-height: 1;
+    line-height: 1.25;
   }
 
   h1 {
-    font-size: 1.5em;
+    overflow: hidden;
+    font-family: $typeface-title;
+    font-size: 2.5em;
+    line-height: 1;
     text-transform: uppercase;
+    text-rendering: optimizeLegibility;
   }
 
   @include media-ie($breakpoint-beta) {

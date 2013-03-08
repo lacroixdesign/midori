@@ -7,7 +7,7 @@
   .header-logo {
     float: left;
     width: 1.75em;
-    margin-right: 1em;
+    margin-right: 0.75em;
   }
 
   img {
@@ -17,8 +17,11 @@
 
   h1 {
     float: left;
-    font-size: 1.25em;
+    font-family: $typeface-title;
+    font-size: 1.75em;
+    line-height: 1.1;
     text-transform: uppercase;
+    text-rendering: optimizeLegibility;
   }
 
   .menu-close-btn {
@@ -28,11 +31,12 @@
   }
 
   @include media-ie($breakpoint-beta) {
+    padding-bottom: 1.05em;
     font-size: 85%;
 
     .header-logo {
       float: none;
-      width: 2.5em;
+      width: 2.25em;
       margin: auto;
     }
 
@@ -46,16 +50,19 @@
   }
 
   @include media-ie($breakpoint-gamma) {
+    padding-top: 0.7em;
+    padding-bottom: 0.5em;
     font-size: 100%;
 
     .header-logo {
       float: left;
-      margin-right: 1em;
+      margin-right: 0.75em;
     }
 
     h1 {
       display: block;
-      font-size: 2em;
+      font-size: 2.5em;
+      line-height: 1;
     }
   }
 

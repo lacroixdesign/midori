@@ -17,7 +17,8 @@
     position: absolute;
     width: $menu-width-beta;
     margin-left: 0;
-    box-shadow: inset -1px 0 1px rgba(0,0,0,0.4) !important;
+    border-right: 3px solid darken($menu-color, 3%);
+    box-shadow: none !important;
     border-radius: 0;
     text-align: center;
     @include transition(all 0s ease-in-out);
