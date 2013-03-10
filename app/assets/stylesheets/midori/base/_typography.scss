@@ -40,6 +40,18 @@
   600, italic, $asset-pipeline: true
 );
 
+// Open Sans Condensed Regular
+@include font-face( "OpenSansCondensed", 
+  "midori/open-sans-condensed/OpenSans-CondLight-webfont", 
+  400, normal, $asset-pipeline: true
+);
+// Open Sans Condensed Bold
+@include font-face( "OpenSansCondensed", 
+  "midori/open-sans-condensed/OpenSans-CondBold-webfont", 
+  600, normal, $asset-pipeline: true
+);
+
 $typeface-sans:  "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $typeface-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 $typeface-title: LeagueGothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$typeface-title-alt: OpenSansCondensed, "Helvetica Neue", Helvetica, Arial, sans-serif;

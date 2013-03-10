@@ -2,7 +2,7 @@
 body {
   @include clearfix;
   background: $white;
-  color: #666;
+  color: $text-color;
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
 }
@@ -11,7 +11,7 @@ a {
   @include transition (all 0.2s ease-in-out);
 }
 
-p, a, h1, h2, h3, h4, h5, label {
+p, a, h1, h2, h3, h4, h5, h6, label {
   font-family: inherit;
 }
 
@@ -41,4 +41,12 @@ h6 {}
 
 p {
   line-height: 1.35;
+}
+
+label {
+  color: lighten($text-color, 20%);
+  font-family: $typeface-title-alt;
+  font-size: 0.8125em;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
 }

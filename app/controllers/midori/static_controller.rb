@@ -1,6 +1,6 @@
 require_dependency "midori/application_controller"
 
 module Midori
-  class PagesController < ApplicationController
+  class StaticController < ApplicationController
   end
 end

@@ -1,0 +1,32 @@
+- title ["Style Guide"]
+
+-# Main
+.l-main
+  / #typography
+  /   %h2 Typography
+
+  -# Forms
+  #forms
+    %h2 Forms
+    .m-input-group
+      %label Regular Text Input
+      %input.m-input-text{ type: "text" }
+    .m-input-group
+      %label Medium Text Input
+      %input.m-input-text.medium{ type: "text" }
+    .m-input-group
+      %label Large Text Input
+      %input.m-input-text.large{ type: "text" }
+
+
+-# Sidebar
+.l-sidebar
+  .m-box
+    %h3 Navigate
+    %ul.m-list-basic
+      / %li= link_to "Typography", "#typography"
+      / %li= link_to "Lists", "#lists"
+      %li= link_to "Forms", "#forms"
+      %li= link_to "Containers", "#containers"
+      %li= link_to "Buttons", "#buttons"
+      / %li= link_to "", "#"

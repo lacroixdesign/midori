@@ -1,3 +1,4 @@
 Midori::Engine.routes.draw do
-  root to: "pages#index"
+  get "styles" => "static#styles"
+  root to: "static#index"
 end
