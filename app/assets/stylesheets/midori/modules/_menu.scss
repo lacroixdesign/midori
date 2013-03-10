@@ -2,6 +2,7 @@
 .m-menu-header {
   @include clearfix;
   padding: 1em $menu-gutter;
+  margin-bottom: 0.5em;
   color: lighten($menu-color, 35%);
 
   .header-logo {
@@ -68,13 +69,23 @@
 
 }
 
-// Menu List
-.m-menu-list {
+// Menu Sections
+.m-menu-sections {
+  .m-menu-section {
+    border-top: 1px solid darken($menu-color, 3%);
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+}
+
+// Menu Section
+.m-menu-section {
   margin-bottom: 1em;
-  border-top: 1px solid darken($menu-color, 3%);
   color: lighten($menu-color, 35%);
 
-  .menu-list-title {
+  .menu-section-title {
     padding: 1em $menu-gutter;
   }
 

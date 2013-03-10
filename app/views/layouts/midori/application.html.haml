@@ -53,23 +53,24 @@
           %a{ href: "#menu", data: {toggle_class: "is-open"} }
             = icon("f0c9")
 
-      .m-menu-list
-        .menu-list-title
-          %h2 Manage
-        %ul
-          = render "midori/menu/menu_item", title: "Pages", url: "#", icon: icon("e001")
-          = render "midori/menu/menu_item", title: "Posts", url: "#", icon: icon("e000")
-          = render "midori/menu/menu_item", title: "Events", url: "#", icon: icon("e006")
-          = render "midori/menu/menu_item", title: "Images", url: "#", icon: icon("e002")
-          = render "midori/menu/menu_item", title: "Galleries", url: "#", icon: icon("e003")
+      .m-menu-sections
+        .m-menu-section
+          .menu-section-title
+            %h2 Manage
+          %ul
+            = render "midori/menu/menu_item", title: "Pages", url: "#", icon: icon("e001")
+            = render "midori/menu/menu_item", title: "Posts", url: "#", icon: icon("e000")
+            = render "midori/menu/menu_item", title: "Events", url: "#", icon: icon("e006")
+            = render "midori/menu/menu_item", title: "Images", url: "#", icon: icon("e002")
+            = render "midori/menu/menu_item", title: "Galleries", url: "#", icon: icon("e003")
 
-      .m-menu-list
-        .menu-list-title
-          %h2 Admin
-        %ul
-          = render "midori/menu/menu_item", title: "Settings", url: "#", icon: icon("e00b")
-          = render "midori/menu/menu_item", title: "Help", url: "#", icon: icon("e015")
-          = render "midori/menu/menu_item", title: "Sign Out", url: "#", icon: icon("e00e")
+        .m-menu-section
+          .menu-section-title
+            %h2 Admin
+          %ul
+            = render "midori/menu/menu_item", title: "Settings", url: "#", icon: icon("e00b")
+            = render "midori/menu/menu_item", title: "Help", url: "#", icon: icon("e015")
+            = render "midori/menu/menu_item", title: "Sign Out", url: "#", icon: icon("e00e")
 
     -# Body
     %section.l-body

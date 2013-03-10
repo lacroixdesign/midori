@@ -25,6 +25,8 @@
   }
 
   @include media-ie($breakpoint-beta) {
+    text-align: left;
+
     h1 {
       margin-right: 0;
     }
