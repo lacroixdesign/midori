@@ -1,5 +1,9 @@
 .m-input-group {
   margin-bottom: 1.5em;
+
+  [class*="btn"] {
+    margin: 0 0.25em 0.5em 0;
+  }
 }
 
 select,
@@ -19,6 +23,9 @@ input[type="password"] {
   font-family: $typeface-sans;
   font-size: 1em;
   line-height: 1.25;
+  @include placeholder {
+    color: #ddd;
+  }
 
   &:focus {
     border: none;

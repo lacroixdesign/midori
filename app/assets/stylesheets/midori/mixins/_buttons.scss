@@ -1,0 +1,26 @@
+@mixin button($bg) {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #fff;
+  background: $bg;
+  font-size: 1em;
+  text-shadow: none;
+
+  &:hover {
+   background: darken($bg, 10%);
+  }
+
+  &:active {
+   background: darken($bg, 20%);
+  }
+
+  &.small {
+    font-size: 0.75em;
+  }
+
+  &.large {
+    font-size: 1.5em;
+  }
+}

@@ -5,19 +5,30 @@
   / #typography
   /   %h2 Typography
 
-  -# Forms
-  #forms
-    %h2 Forms
+  -# Inputs
+  #inputs
+    %h2 Inputs
     .m-input-group
       %label Regular Text Input
-      %input.m-input-text{ type: "text" }
+      %input.m-input-text{ type: "text", placeholder: "Regular Text Placeholder" }
     .m-input-group
       %label Medium Text Input
-      %input.m-input-text.medium{ type: "text" }
+      %input.m-input-text.medium{ type: "text", placeholder: "Medium Text Placeholder" }
     .m-input-group
       %label Large Text Input
-      %input.m-input-text.large{ type: "text" }
+      %input.m-input-text.large{ type: "text", placeholder: "Large Text Placeholder" }
 
+  -# Buttons
+  #buttons
+    %h2 Buttons
+    - ["Regular", "Small", "Large"].each do |size|
+      .m-input-group
+        %label= "#{size} Buttons"
+        %button.btn{ class: size.downcase } Standard Button
+        %button.btn-success{ class: size.downcase } Success Button
+        %button.btn-okay{ class: size.downcase } Okay Button
+        %button.btn-warn{ class: size.downcase } Warn Button
+        %button.btn-danger{ class: size.downcase } Danger Button
 
 -# Sidebar
 .l-sidebar
@@ -26,7 +37,7 @@
     %ul.m-list-basic
       / %li= link_to "Typography", "#typography"
       / %li= link_to "Lists", "#lists"
-      %li= link_to "Forms", "#forms"
-      %li= link_to "Containers", "#containers"
+      %li= link_to "Inputs", "#inputs"
+      / %li= link_to "Containers", "#containers"
       %li= link_to "Buttons", "#buttons"
       / %li= link_to "", "#"

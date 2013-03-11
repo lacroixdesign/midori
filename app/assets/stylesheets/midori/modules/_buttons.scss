@@ -1,15 +1,24 @@
-// Standard buttons used throughout the application.
-//
-// :hover    - Highlights when hovering.
-// :disabled - Dims the button when disabled.
-// .primary  - Indicates button is the primary action.
-//
-// Styleguide 5.1
+// Standard Button
 .btn {
-  padding: 0.5em 1em;
-  border: 1px solid #ddd;
-  border-radius: 0;
-  color: #555;
-  background: #f8f8f8;
-  text-shadow: 0 1px 1px white;
+  @include button($grey-dark);
+}
+
+// Success Button
+.btn-success {
+  @include button($green);
+}
+
+// Okay Button
+.btn-okay {
+  @include button($blue);
+}
+
+// Warn Button
+.btn-warn {
+  @include button($orange);
+}
+
+// Danger Button
+.btn-danger {
+  @include button($red);
 }
