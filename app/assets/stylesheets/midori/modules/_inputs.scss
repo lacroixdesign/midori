@@ -1,3 +1,4 @@
+// Input Groups
 .m-input-group {
   margin-bottom: 1.5em;
 
@@ -6,7 +7,7 @@
   }
 }
 
-select,
+// Text Inputs
 textarea,
 input[type="text"],
 input[type="email"],
@@ -43,5 +44,25 @@ input[type="password"] {
   &.large {
     padding: 0.25em;
     font-size: 2em;
+  }
+}
+
+// Select Input
+select {
+  font-size: 1em;
+}
+
+// Checkboxes & Radio Buttons
+.m-checkbox,
+.m-radio-button {
+  margin-bottom: 0.5em;
+  font-family: $typeface-sans;
+  font-size: 0.9375em;
+  font-weight: normal;
+  text-transform: none;
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 0.25em;
   }
 }

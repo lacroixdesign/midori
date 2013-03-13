@@ -18,6 +18,31 @@
       %label Large Text Input
       %input.m-input-text.large{ type: "text", placeholder: "Large Text Placeholder" }
 
+    .m-input-group
+      %label Checkboxes
+      - 4.times do |i|
+        %label.m-checkbox{ for: "checkbox-#{i+1}" }
+          %input{ type: "checkbox", name: "checkbox-#{i+1}", id: "checkbox-#{i+1}", checked: (true if i == 0) }
+          = "Checkbox #{i+1}"
+
+    .m-input-group
+      %label Radio Buttons
+      - 4.times do |i|
+        %label.m-radio-button{ for: "radio-input-#{i+1}" }
+          %input{ type: "radio", name: "radio-input", id: "radio-input-#{i+1}", checked: (true if i == 0) }
+          = "Radio Button #{i+1}"
+
+    .m-input-group
+      %label Select
+      %select
+        - 4.times do |i|
+          %option{ value: (i+1) }= "Option #{i+1}"
+
+    .m-input-group
+      %label Textarea
+      %textarea{ placeholder: "Textarea Placeholder" }
+
+
   -# Buttons
   #buttons
     %h2 Buttons
