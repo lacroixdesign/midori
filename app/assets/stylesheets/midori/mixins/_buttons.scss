@@ -1,12 +1,13 @@
 @mixin button($bg) {
-  padding: 0.75em 1em;
+  padding: 0 1.5em;
   border: none;
   border-radius: 3px;
   box-shadow: none;
   color: $white;
   background: $bg;
-  font-size: 0.75em;
+  font-size: 0.8125em;
   font-weight: bold;
+  line-height: 2.75;
   text-shadow: none;
   text-rendering: optimizeLegibility;
 
@@ -19,7 +20,7 @@
   }
 
   &.small {
-    font-size: 0.625em;
+    font-size: 0.6875em;
   }
 
   &.large {
