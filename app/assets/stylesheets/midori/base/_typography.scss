@@ -1,24 +1,5 @@
 // Typefaces
 
-// League Gothic Regular
-@include font-face( "LeagueGothic",
-  "midori/league-gothic/leaguegothic-regular-webfont", 
-  normal, normal, $asset-pipeline: true
-);
-@include font-face( "LeagueGothic",
-  "midori/league-gothic/leaguegothic-regular-webfont", 
-  bold, normal, $asset-pipeline: true
-);
-// League Gothic Regular Condensed
-@include font-face( "LeagueGothicCondensed", 
-  "midori/league-gothic/leaguegothic-condensed-regular-webfont", 
-  normal, normal, $asset-pipeline: true
-);
-@include font-face( "LeagueGothicCondensed", 
-  "midori/league-gothic/leaguegothic-condensed-regular-webfont", 
-  bold, normal, $asset-pipeline: true
-);
-
 // Open Sans Regular
 @include font-face( "OpenSans", 
   "midori/open-sans/OpenSans-Regular-webfont", 
@@ -53,5 +34,4 @@
 
 $typeface-sans:  "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $typeface-serif: Georgia, Cambria, "Times New Roman", Times, serif;
-$typeface-title: LeagueGothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$typeface-title-alt: OpenSansCondensed, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$typeface-title: OpenSansCondensed, "Helvetica Neue", Helvetica, Arial, sans-serif;

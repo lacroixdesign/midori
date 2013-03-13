@@ -1,9 +1,9 @@
 // Body Header
 .m-body-header {
   @include clearfix;
-  padding: 0.6em $page-gutter 0.5em;
+  padding: 0.6em $page-gutter 0.2em;
   margin-bottom: 1em;
-  border-bottom: 3px solid darken($midori, 5%);
+  border-bottom: 3px solid darken($midori, 7%);
   background: $midori;
   color: darken($midori, 12%);
   text-align: center;
@@ -18,8 +18,8 @@
     overflow: hidden;
     margin-right: 0.65em;
     font-family: $typeface-title;
-    font-size: 2.5em;
-    line-height: 1;
+    font-size: 2.25em;
+    line-height: 1.2;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
   }

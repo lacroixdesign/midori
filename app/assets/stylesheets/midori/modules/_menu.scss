@@ -1,28 +1,19 @@
 // Menu Header
 .m-menu-header {
   @include clearfix;
-  padding: 1em $menu-gutter;
-  margin-bottom: 0.5em;
+  padding: 0 $menu-gutter;
+  margin: 1em auto 1.5em;
   color: lighten($menu-color, 35%);
 
   .header-logo {
     float: left;
-    width: 1.75em;
+    width: 50%;
     margin-right: 0.75em;
   }
 
   img {
     display: block;
     width: 100%;
-  }
-
-  h1 {
-    float: left;
-    font-family: $typeface-title;
-    font-size: 1.75em;
-    line-height: 1.1;
-    text-transform: uppercase;
-    text-rendering: optimizeLegibility;
   }
 
   .menu-close-btn {
@@ -32,17 +23,12 @@
   }
 
   @include media-ie($breakpoint-beta) {
-    padding-bottom: 1.05em;
-    font-size: 85%;
+    font-size: 90%;
 
     .header-logo {
       float: none;
-      width: 2.25em;
+      width: 100%;
       margin: auto;
-    }
-
-    h1 {
-      display: none;
     }
 
     .menu-close-btn {
@@ -51,19 +37,11 @@
   }
 
   @include media-ie($breakpoint-gamma) {
-    padding-top: 0.7em;
-    padding-bottom: 0.5em;
     font-size: 100%;
 
     .header-logo {
       float: left;
       margin-right: 0.75em;
-    }
-
-    h1 {
-      display: block;
-      font-size: 2.5em;
-      line-height: 1;
     }
   }
 
@@ -76,12 +54,12 @@
 
   .menu-section-title {
     padding: 0.5em $menu-gutter;
-    margin-bottom: 0.5em;
     border-bottom: 1px solid darken($menu-color, 3%);
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 0.875em;
+    font-weight: bold;
     text-transform: uppercase;
   }
 
@@ -101,17 +79,7 @@
     display: block;
     padding: 0.25em 0;
     font-size: 1.125em;
-
-    i {
-      float: left;
-      width: 1.5em;
-      font-size: 1.5em;
-    }
-
-    span {
-      float: left;
-      margin-top: 0.25em;
-    }
+    text-rendering: optimizeLegibility;
   }
 
   @include media($breakpoint-beta) {

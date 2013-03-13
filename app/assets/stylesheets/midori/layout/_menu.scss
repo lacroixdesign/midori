@@ -21,13 +21,11 @@
     border-bottom: 2px solid darken($menu-color, 3%);
     box-shadow: none !important;
     border-radius: 0;
-    text-align: center;
     @include transition(all 0s ease-in-out);
   }
 
   @include media-ie($breakpoint-gamma) {
     width: $menu-width-gamma;
-    text-align: left;
   }
 
 }
