@@ -3,7 +3,7 @@
   @include clearfix;
   padding: 0 $menu-gutter;
   margin: 1em auto 1.5em;
-  color: lighten($menu-color, 35%);
+  color: darken($menu-color, 35%);
 
   .header-logo {
     float: left;
@@ -50,12 +50,12 @@
 // Menu Section
 .m-menu-section {
   margin-bottom: 1em;
-  color: lighten($menu-color, 35%);
+  color: darken($menu-color, 35%);
 
   .menu-section-title {
     padding: 0.5em $menu-gutter;
     margin-bottom: 0.25em;
-    border-bottom: 1px solid darken($menu-color, 3%);
+    border-bottom: 1px solid darken($menu-color, 5%);
   }
 
   h2 {
@@ -72,7 +72,7 @@
   li {
     padding: 0 $menu-gutter;
     margin: 0;
-    &:hover { background: darken($menu-color, 3%); }
+    &:hover { background: darken($menu-color, 5%); }
   }
 
   li a {
