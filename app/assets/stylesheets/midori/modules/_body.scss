@@ -1,11 +1,14 @@
+$body-header-dark:  desaturate(lighten($midori-dark, 37), 75);
+$body-header-light: desaturate(lighten($midori-dark, 63), 80);
+
 // Body Header
 .m-body-header {
   @include clearfix;
   padding: 0.6em $page-gutter 0.2em;
-  margin-bottom: 1em;
-  border-bottom: 3px solid darken($midori, 7%);
-  background: $midori;
-  color: darken($midori, 12%);
+  margin-bottom: 1.5em;
+  // border-bottom: 1px solid darken($body-header-light, 10%);
+  background: $body-header-light;
+  color: $body-header-dark;
   text-align: center;
 
   .menu-close-btn {
