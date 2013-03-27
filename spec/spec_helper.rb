@@ -39,4 +39,9 @@ end
 # Run each time you run your specs.
 # 
 Spork.each_run do
+  require 'factory_girl_rails'
+
+  RSpec.configure do |config|
+    config.include FactoryGirl::Syntax::Methods
+  end
 end

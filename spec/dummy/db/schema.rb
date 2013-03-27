@@ -11,6 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20130314012603) do
+
+  create_table "midori_posts", :force => true do |t|
+    t.string   "title"
+    t.string   "slug"
+    t.date     "date"
+    t.text     "body"
+    t.integer  "image_id"
+    t.string   "status"
+    t.string   "type"
+    t.text     "properties"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "midori_posts", ["image_id"], :name => "index_midori_posts_on_image_id"
 
 end
