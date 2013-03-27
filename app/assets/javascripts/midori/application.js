@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require midori/chosen.jquery.min
 //= require_tree ./components
 //= require_tree .

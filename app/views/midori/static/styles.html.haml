@@ -8,39 +8,41 @@
   -# Inputs
   #inputs
     %h2 Inputs
-    .m-input-group
-      %label Regular Text Input
-      %input.m-input-text{ type: "text", placeholder: "Regular Text Placeholder" }
-    .m-input-group
-      %label Medium Text Input
-      %input.m-input-text.medium{ type: "text", placeholder: "Medium Text Placeholder" }
-    .m-input-group
-      %label Large Text Input
-      %input.m-input-text.large{ type: "text", placeholder: "Large Text Placeholder" }
+    %form.m-form
+      .m-input-group
+        %label Regular Text Input
+        %input.m-input-text{ type: "text", placeholder: "Regular Text Placeholder" }
+      .m-input-group
+        %label Medium Text Input
+        %input.m-input-text.medium{ type: "text", placeholder: "Medium Text Placeholder" }
+      .m-input-group
+        %label Large Text Input
+        %input.m-input-text.large{ type: "text", placeholder: "Large Text Placeholder" }
 
-    .m-input-group
-      %label Checkboxes
-      - 4.times do |i|
-        %label.m-checkbox{ for: "checkbox-#{i+1}" }
-          %input{ type: "checkbox", name: "checkbox-#{i+1}", id: "checkbox-#{i+1}", checked: (true if i == 0) }
-          = "Checkbox #{i+1}"
-
-    .m-input-group
-      %label Radio Buttons
-      - 4.times do |i|
-        %label.m-radio-button{ for: "radio-input-#{i+1}" }
-          %input{ type: "radio", name: "radio-input", id: "radio-input-#{i+1}", checked: (true if i == 0) }
-          = "Radio Button #{i+1}"
-
-    .m-input-group
-      %label Select
-      %select
+      .m-input-group
+        %label Checkboxes
         - 4.times do |i|
-          %option{ value: (i+1) }= "Option #{i+1}"
+          %label.m-checkbox{ for: "checkbox-#{i+1}" }
+            %input{ type: "checkbox", name: "checkbox-#{i+1}", id: "checkbox-#{i+1}", checked: (true if i == 0) }
+            = "Checkbox #{i+1}"
 
-    .m-input-group
-      %label Textarea
-      %textarea{ placeholder: "Textarea Placeholder" }
+      .m-input-group
+        %label Radio Buttons
+        - 4.times do |i|
+          %label.m-radio-button{ for: "radio-input-#{i+1}" }
+            %input{ type: "radio", name: "radio-input", id: "radio-input-#{i+1}", checked: (true if i == 0) }
+            = "Radio Button #{i+1}"
+
+      .m-input-group
+        %label Select
+        %select
+          %option
+          - 4.times do |i|
+            %option{ value: (i+1) }= "Option #{i+1}"
+
+      .m-input-group
+        %label Textarea
+        %textarea{ placeholder: "Textarea Placeholder" }
 
 
   -# Buttons
